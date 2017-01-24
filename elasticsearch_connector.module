@@ -838,6 +838,7 @@ function elasticsearch_connector_load_library($cluster) {
  * @return bool
  */
 function elasticsearch_connector_check_status($status) {
+  return TRUE;
   if (is_array($status) && $status['status'] == ELASTICSEARCH_CONNECTOR_CLUSTER_STATUS_OK) {
     return TRUE;
   }
